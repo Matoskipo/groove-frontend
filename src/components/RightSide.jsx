@@ -3,20 +3,13 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import searchIcon from "../assets/icons/search.svg";
 import { RightSideStyle } from "../styles/RightSide.style";
 import hero from "../assets/images/hero.jpg";
-
 import Footer from '../components/Footer'
-
 import  profileImage from '../assets/images/matt.jpg'
-
 import omahlay from "../assets/icons/omahlay.svg";
-// import Cards from "../components/common/Cards";
-
 import Singles from "../components/common/Singles";
-import TestCards from "./common/Cards";
+import Cards from "./common/Cards";
 
-{/* <div className='image-top'>
-                            <img  src={profileImage} className="image"  alt="image" />
-                        </div> */}
+
 
 
 const RightSide = () => {
@@ -62,7 +55,7 @@ const RightSide = () => {
             </div>
             
             <div className="song-list1">
-              <TestCards />
+              <Cards />
             </div>
             <div className="cheers">
                 <h2>Cheers to the Weekend</h2>

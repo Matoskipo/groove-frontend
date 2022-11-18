@@ -1,13 +1,13 @@
 import { cardLinks } from "../../assets/links/Links";
-import TestCard from "./Card";
+import Card from "./Card";
 import styled from "styled-components";
 import {imagesArray} from '../../assets/links/Links'
 
 
 
-const TestCards = () => {
+const Cards = () => {
   return (
-    <TestCardsStyle>
+    <CardsStyle>
       {cardLinks.map((c) => {
         const {
           id,
@@ -20,7 +20,7 @@ const TestCards = () => {
           background,
         } = c;
         return (
-          <TestCard
+          <Card
             key={id}
             title={title}
             body={body}
@@ -31,18 +31,17 @@ const TestCards = () => {
             imageUrl={imagesArray[c.id]}
             background={background}
           >
-          </TestCard>
+          </Card>
         );
       })}
-    </TestCardsStyle>
+    </CardsStyle>
   );
 };
 
-export default TestCards;
+export default Cards;
 
-const TestCardsStyle = styled.div`
+const CardsStyle = styled.div`
   display: flex;
- 
   .card {
     margin-left: 15px;
   }

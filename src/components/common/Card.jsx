@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const TestCard = ({
+const Card = ({
   title,
   imageUrl,
   body,
@@ -41,7 +41,7 @@ const TestCard = ({
   );
 };
 
-export default TestCard;
+export default Card;
 
 const CardStyle = styled.div`
   background: black;
